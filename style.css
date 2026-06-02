@@ -208,3 +208,36 @@ main{
     header{
         padding: 0;
     }
+     main{
+        display: flex;
+        gap:3rem;
+        padding: 3rem;
+        border-radius: 1.5625rem;
+        max-width: 57.5rem;
+        margin-inline: auto;
+    }
+
+    main section{
+        width: 100%;
+    }
+
+    .conta input::-webkit-inner-spin-button, 
+    .pessoas input::-webkit-inner-spin-button{
+        display: none;
+    }
+
+    .gorjeta div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .resultados{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.5rem;
+    }
+
+    .resultados div > strong{
+        font-size: 3rem;
+    }
+    
+}
