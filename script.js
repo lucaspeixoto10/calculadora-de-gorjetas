@@ -74,3 +74,16 @@ function receberPorcentagem(evento) {
 
     calcular()
 
+const gorjetaInput = document.querySelector("#outra")
+
+gorjetaInput.addEventListener("input", receberPorcentagem)
+
+
+function calcular() { 
+
+    if (
+        conta !== 0 &&
+        porcentagem !== 0 &&
+        pessoas !== 0
+    )
+}
