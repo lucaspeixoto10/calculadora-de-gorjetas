@@ -1,63 +1,66 @@
-*{
+* {
+    padding: 0;
     margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-
+    box-sizing: border-box;
+    font-family: "Space Mono", serif;
 }
 
-:root{
+:root {
     --green-100: #f3f9fa;
     --green-200: #c5e4e7;
-    --green-300: #9EBB8D;
+    --green-300: #9ebdbd;
     --green-400: #7f9d9f;
-    --green--500:#5e7a7d;
-    --green--600:#547b7b;
-    --green--700: #3d6666;
-    --green--800: #00474b;
-    --light-green:#26c2ae;
+    --green-500: #5e7a7d;
+    --green-600: #547878;
+    --green-700: #3d6666;
+    --green-800: #00474b;
+    --light-green: #26c2ae;
     --white: #ffffff;
+    --green-hover: #9fe8df;
+    --danger: #e17457;
 }
 
-body{
+body {
     background-color: var(--green-200);
 }
 
-header{
-    border: 1px solid red;
+header {
     display: flex;
     justify-content: center;
     padding-block: 2.8rem;
 }
 
-main{
+main {
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
 }
+
 .conta,
-.gorjeta{
+.gorjeta {
     margin-bottom: 2rem;
 }
 
-.conta label, 
-.gorjeta ,
-.pessoas label{
+.conta label,
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
 
 .conta div,
-.pessoas .input-box{
-     margin-top: 0.4rem;
-     background-color: var(--green-100);
-     padding: 0.4rem 1.2rem;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     border-radius: 0.3125rem;
+.pessoas .input-box {
+    margin-top: 0.4rem;
+    background-color: var(--green-100);
+    padding: 0.4rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.3125rem;
 }
 
 .conta input,
-.pessoas input{
+.pessoas input {
     border: none;
     text-align: right;
     width: 100%;
@@ -65,35 +68,32 @@ main{
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--green-800);
-    outline:none;
+    outline: none;
 }
 
 .conta input::placeholder,
-.pessoas input::placeholder{
+.pessoas input::placeholder {
     color: var(--green-300);
 }
 
-.conta:has(input:focus) div
+.conta:has(input:focus) div,
 .conta:has(input:hover) div,
 .pessoas:has(input:focus) .input-box,
 .pessoas:has(input:hover) .input-box,
-.gorjeta #outra:focus
+.gorjeta #outra:focus,
 .gorjeta #outra:hover {
     outline: 2px solid var(--light-green);
     cursor: pointer;
 }
 
-
-
-
-.gorjeta div{
+.gorjeta div {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-.gorjeta input{
+.gorjeta input {
     font-size: 1.5rem;
     font-weight: 700;
     border: none;
@@ -104,73 +104,73 @@ main{
     background-color: var(--green-800);
     color: var(--white);
 }
-.gorjeta .botao-ativo{
+
+.gorjeta .botao-ativo {
     background-color: var(--light-green);
     color: var(--green-800);
 }
 
 .gorjeta input[type="button"]:hover,
-.resultados button:hover{
+.resultados button:hover {
     background-color: var(--green-hover);
     cursor: pointer;
-
 }
 
-.gorjeta #outra{
+.gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
     color: var(--green-800);
-
 }
 
-.gorjeta #outra::placeholder{
+.gorjeta #outra::placeholder {
     color: var(--green-300);
 }
 
-.pessoas .texto{
+.pessoas .texto {
     display: flex;
     align-items: center;
-   justify-content: space-between;
-}
-.pessoas #erro-div{
-    outline: 2px solid var(--danger-);
+    justify-content: space-between;
 }
 
-
-.pessoas #erro{
-     font-size: 0.75rem;
-     color: var(--danger-);
-     font-weight: 700;
-     display: none;
+.pessoas #erro-div {
+    outline: 2px solid var(--danger);
 }
 
-.resultados{
+.pessoas #erro {
+    font-size: 0.75rem;
+    color: var(--danger);
+    font-weight: 700;
+    display: none;
+}
+
+.resultados {
     background-color: var(--green-800);
     border-radius: 0.9375rem;
     padding: 1.5rem;
 }
 
 .resultados div div {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.resultados p{
+.resultados p {
     color: var(--green-400);
     font-size: 0.8125rem;
 }
-.resultados p strong{
+
+.resultados p strong {
     color: var(--white);
     font-size: 1rem;
 }
 
-.resultados div > strong{
+.resultados div > strong {
     color: var(--light-green);
     font-size: 2rem;
 }
 
-.resultados .gorjeta-total{
+.resultados .gorjeta-total {
     margin-bottom: 1.25rem;
 }
 
@@ -178,7 +178,7 @@ main{
     margin-bottom: 2rem;
 }
 
-.resultados button{
+.resultados button {
     width: 100%;
     background-color: var(--light-green);
     border: none;
@@ -189,15 +189,15 @@ main{
     font-size: 1.25rem;
     padding-block: 0.5rem;
 }
-.conta input::-webkit-inner-spin-button,
-    .gorjetainput::-webkit-inner-spin-button,
-    .gorjeta #outra::-webkit-inner-spin-button{
-        display: none;
 
-    }
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-@media(min-width: 920px) {
-    body{
+@media (min-width: 920px) {
+    body {
         display: flex;
         flex-direction: column;
         min-height: 100svh;
@@ -205,39 +205,35 @@ main{
         gap: 5rem;
     }
 
-    header{
+    header {
         padding: 0;
     }
-     main{
+
+    main {
         display: flex;
-        gap:3rem;
+        gap: 3rem;
         padding: 3rem;
         border-radius: 1.5625rem;
         max-width: 57.5rem;
         margin-inline: auto;
     }
 
-    main section{
+    main section {
         width: 100%;
     }
 
-    .conta input::-webkit-inner-spin-button, 
-    .pessoas input::-webkit-inner-spin-button{
-        display: none;
-    }
-
-    .gorjeta div{
+    .gorjeta div {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .resultados{
+
+    .resultados {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 2.5rem;
     }
 
-    .resultados div > strong{
+    .resultados div > strong {
         font-size: 3rem;
     }
-    
 }

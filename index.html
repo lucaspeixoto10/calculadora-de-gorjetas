@@ -3,74 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjeta</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">          
-      <script src="script.js" defer></script>
-<title>Calculadora de Gorjeta</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
-        <img src="./images/logo.svg" alt="Logo do splinter">
+        <img src="./images/logo.svg" alt="Logo do Splitter">
     </header>
+
     <main>
-        <section class="infomacoes">
-            <form action="">
-              <div class="conta">
-                <label for="conta">conta</label>
-                <div>
-                    <img src="./images/icon-dollar.svg" alt="icone do cifrao">
-                    <input type="number" name="conta" id="conta " placeholder="0">
+
+        <section class="informacoes">
+
+            <form>
+
+                <div class="conta">
+                    <label for="conta">Conta</label>
+
+                    <div>
+                        <img src="./images/icon-dollar.svg" alt="Ícone de dólar">
+
+                        <input
+                            type="number"
+                            name="conta"
+                            id="conta"
+                            placeholder="0"
+                        >
+                    </div>
                 </div>
-              </div>
 
-              <div class="gojeta">
-                <label for="outra">Selecione a gorjeta %</label>
-                 
-<div>
-   <input type="button" value="5%" id="">
-   <input type="button" value="10%" id="">
-   <input type="button" value="15%" id="">
-   <input type="button" value="25%" id="">
-   <input type="button" value="50%" id="">
-   <input type="number" name="outra" id="outra" placeholder="Outra">
-</div>
+                <div class="gorjeta">
 
-              </div>
+                    <label for="outra">
+                        Selecione a gorjeta %
+                    </label>
 
-              <div>
+                    <div>
+
+                        <input type="button" value="5%">
+                        <input type="button" value="10%">
+                        <input type="button" value="15%">
+                        <input type="button" value="25%">
+                        <input type="button" value="50%">
+
+                        <input
+                            type="number"
+                            name="outra"
+                            id="outra"
+                            placeholder="Outra"
+                        >
+
+                    </div>
+
+                </div>
+
                 <div class="pessoas">
-                  <label for="pessoas">Quantitades de pessoas</label>
-                  <p>Não pode ser zero</p>
-                <div>
-                    <img src="./images/icon-person.svg" alt="icone da pessoa">
-                    <input type="number" name="pessoas" id="pessoas" placeholder="0">
-                </div> 
+
+                    <div class="texto">
+
+                        <label for="pessoas">
+                            Quantidade de pessoas
+                        </label>
+
+                        <p id="erro">
+                            Não pode ser zero
+                        </p>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <img
+                            src="./images/icon-person.svg"
+                            alt="Ícone de pessoa"
+                        >
+
+                        <input
+                            type="number"
+                            name="pessoas"
+                            id="pessoas"
+                            placeholder="0"
+                        >
+
+                    </div>
+
                 </div>
-              </div>
+
             </form>
+
         </section>
 
         <section class="resultados">
-            <div class="gorjeta-total">
-                <p>
-                    <strong>Gorjeta</strong> <br>
-                    / pessoa
-                </p>
 
-                <strong>$ 0.00</strong>
-            </div>
+            <div>
+
+                <div class="gorjeta-total">
+
+                    <p>
+                        <strong>Gorjeta</strong><br>
+                        / pessoa
+                    </p>
+
+                    <strong>R$ 0.00</strong>
+
+                </div>
 
                 <div class="total">
-                <p>
-                    <strong>Total</strong> <br>
-                    / pessoa
-                </p>
 
-                <strong>$ 0.00</strong>
+                    <p>
+                        <strong>Total</strong><br>
+                        / pessoa
+                    </p>
+
+                    <strong>R$ 0.00</strong>
+
+                </div>
+
             </div>
+
+            <button type="button">
+                Limpar
+            </button>
+
         </section>
+
     </main>
+
 </body>
 </html>
