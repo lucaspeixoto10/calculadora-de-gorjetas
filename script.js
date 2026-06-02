@@ -32,4 +32,13 @@ function receberQuantidadePessoas(evento) {
 
         pessoas = 0
 
+    } else {
+
+        paragrafoErro.style.display = "none"
+
+        divErro.setAttribute("id", "")
+
+        pessoas = Number(evento.target.value)
     }
+
+    calcular()
