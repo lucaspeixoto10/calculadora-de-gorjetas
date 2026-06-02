@@ -132,3 +132,31 @@ main{
     align-items: center;
    justify-content: space-between;
 }
+.pessoas #erro-div{
+    outline: 2px solid var(--danger-);
+}
+
+
+.pessoas #erro{
+     font-size: 0.75rem;
+     color: var(--danger-);
+     font-weight: 700;
+     display: none;
+}
+
+.resultados{
+    background-color: var(--green-800);
+    border-radius: 0.9375rem;
+    padding: 1.5rem;
+}
+
+.resultados div div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultados p{
+    color: var(--green-400);
+    font-size: 0.8125rem;
+}
